@@ -1,0 +1,13 @@
+<?php
+
+$config = [];
+
+// Determine whether to import user's identities on each login.
+// New user identity will be created for each e-mail address
+// present in address book, but not assigned to any identity.
+$config['new_user_rest_identity_onlogin'] = false;
+
+// Will put the username as last path element like
+// https://example.org/blafasel/username
+// Trailing / or not is important, it is just a concatenation.
+$config['new_user_rest_api_url'] = 'https://example.org/blafasel/';
